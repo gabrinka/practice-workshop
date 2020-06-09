@@ -1,4 +1,4 @@
-package sample;
+//package sample;
 
 import javax.naming.NameClassPair;
 import java.awt.*;
