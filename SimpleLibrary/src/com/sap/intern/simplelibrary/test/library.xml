@@ -1,0 +1,38 @@
+<library>
+	<libraryname>Sofia Library</libraryname>
+	<bookCatalog>
+		<entry>
+			<key>
+				<isbn>123456789</isbn>
+				<genre>Fantasy</genre>
+				<name>Harry Potter</name>
+				<author>J K. Rowling</author>
+				<yearOfPublishing>2005</yearOfPublishing>
+				<publisher>Publisher one</publisher>
+			</key>
+			<value>3</value>
+		</entry>
+		<entry>
+			<key>
+				<isbn>123456780</isbn>
+				<genre>Drama</genre>
+				<name>Pride and Prejudice</name>
+				<author>Jane Austin</author>
+				<yearOfPublishing>1813</yearOfPublishing>
+				<publisher>Publisher one</publisher>
+			</key>
+			<value>2</value>
+		</entry>
+		<entry>
+			<key>
+				<isbn>123456782</isbn>
+				<genre>novel</genre>
+				<name>War and Peace</name>
+				<author>Leo Tolstoy</author>
+				<yearOfPublishing>1869</yearOfPublishing>
+				<publisher>novel</publisher>
+			</key>
+			<value>1</value>
+		</entry>
+	</bookCatalog>
+</library>
