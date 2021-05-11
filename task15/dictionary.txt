@@ -1,0 +1,9 @@
+boy, момче
+girl, момиче
+cat, котка
+dog, куче
+person, човек
+home, дом
+job, работа
+school, училище
+student, ученик
