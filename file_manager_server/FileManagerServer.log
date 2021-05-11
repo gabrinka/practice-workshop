@@ -1,0 +1,272 @@
+Oct 13, 2020 1:46:25 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 1:46:25 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 1:46:44 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:59166 port 59166
+
+Oct 13, 2020 1:46:44 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@792c4f10
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.file_manager_server.server_factory.ServerCommandFactory getCommand
+FINER: Processing command: UPLOAD
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Upload@53380f09
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) null sent to client!
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile2.bin, 2321421280]
+Oct 13, 2020 1:47:04 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+INFO: File: bigfile2.bin successfully uploaded!
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@e4f5c56
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.server_factory.ServerCommandFactory getCommand
+FINER: Processing command: LISTFILES
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.ListFiles@6a112654
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: OK(200) null sent to client!
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.commands.ListFiles execute
+FINER: Starting execution of UPLOAD with arguments: []
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.file_manager_server.commands.ListFiles execute
+INFO: Server's fileslist successfully sent!
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@6079b11
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.file_manager_server.server_factory.ServerCommandFactory getCommand
+FINER: Processing command: DOWNLOAD
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@27e46f76
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile2.bin]
+Oct 13, 2020 1:47:42 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+INFO: File bigfile2.bin has been successfully sent to client for Download
+Oct 13, 2020 1:47:57 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@7a687ce
+
+Oct 13, 2020 1:47:57 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Disconnecting server!
+
+Oct 13, 2020 2:22:42 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 2:22:42 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 2:23:21 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:54765 port 54765
+
+Oct 13, 2020 2:23:21 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@71d570c5
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@775f54f8
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin]
+
+Oct 13, 2020 2:23:43 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+INFO: File bigfile.bin has been successfully sent to client for Download
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@1b57aacc
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Upload@f1bf58b
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) null sent to client!
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin, 2321421280]
+
+Oct 13, 2020 2:24:18 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+INFO: File: bigfile.bin successfully uploaded!
+Oct 13, 2020 3:26:13 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+SEVERE: Error while operating on the server!
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:224)
+	at java.io.ObjectInputStream$PeekInputStream.peek(ObjectInputStream.java:2719)
+	at java.io.ObjectInputStream$BlockDataInputStream.peek(ObjectInputStream.java:3026)
+	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:3036)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1597)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:482)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:440)
+	at com.sap.idm.learning.file_manager_server.implementation.Server.run(Server.java:51)
+
+Oct 13, 2020 5:14:06 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 5:14:06 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 5:14:32 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:54039 port 54039
+
+Oct 13, 2020 5:14:32 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@792c4f10
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@53380f09
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin]
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+SEVERE: Error while operating on the server!
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.nio.file.Files.copy(Files.java:2909)
+	at java.nio.file.Files.copy(Files.java:3069)
+	at com.sap.idm.learning.file_manager_server.commands.Download.execute(Download.java:37)
+	at com.sap.idm.learning.file_manager_server.implementation.Server.processRequest(Server.java:81)
+	at com.sap.idm.learning.file_manager_server.implementation.Server.run(Server.java:61)
+
+Oct 13, 2020 5:16:41 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 5:16:41 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 5:16:51 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:54120 port 54120
+
+Oct 13, 2020 5:16:51 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@626a288d
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@465b9c68
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin]
+
+Oct 13, 2020 5:17:12 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+INFO: File bigfile.bin has been successfully sent to client for Download
+Oct 13, 2020 5:20:02 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 5:20:02 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 5:20:36 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:59948 port 59948
+
+Oct 13, 2020 5:20:36 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@788f05b
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@6e2e8580
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin]
+
+Oct 13, 2020 5:21:24 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+SEVERE: Error while operating on the server!
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.nio.file.Files.copy(Files.java:2909)
+	at java.nio.file.Files.copy(Files.java:3069)
+	at com.sap.idm.learning.file_manager_server.commands.Download.execute(Download.java:37)
+	at com.sap.idm.learning.file_manager_server.implementation.Server.processRequest(Server.java:81)
+	at com.sap.idm.learning.file_manager_server.implementation.Server.run(Server.java:61)
+
+Oct 13, 2020 5:21:28 PM java.util.logging.LogManager$RootLogger log
+INFO: Server application started!
+
+Oct 13, 2020 5:21:28 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINEST: Waiting for client on port 1234...
+
+Oct 13, 2020 5:21:41 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+INFO: Just connected to /127.0.0.1:59960 port 59960
+
+Oct 13, 2020 5:21:41 PM com.sap.idm.learning.file_manager_server.implementation.Server setDataTransferStreams
+FINEST: Socket streams are set up correctly!
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@626a288d
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Upload@465b9c68
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) null sent to client!
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+FINER: Starting execution of UPLOAD with arguments: [mee, 0]
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.file_manager_server.commands.Upload execute
+INFO: File: mee successfully uploaded!
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@1ce263c7
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@476a3700
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [0] sent to client!
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [mee]
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+INFO: File mee has been successfully sent to client for Download
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.file_manager_server.implementation.Server run
+FINE: Received request from client with arguments: com.sap.idm.learning.file_manager_server.common_objects.Request@5556faf7
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.file_manager_server.implementation.Server processRequest
+FINER: Command object created: com.sap.idm.learning.file_manager_server.commands.Download@24df808c
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.file_manager_server.implementation.Server sendResponseToClient
+FINE: Response: CREATED(201) [2321421280] sent to client!
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+FINER: Starting execution of UPLOAD with arguments: [bigfile.bin]
+
+Oct 13, 2020 5:22:16 PM com.sap.idm.learning.file_manager_server.commands.Download execute
+INFO: File bigfile.bin has been successfully sent to client for Download
