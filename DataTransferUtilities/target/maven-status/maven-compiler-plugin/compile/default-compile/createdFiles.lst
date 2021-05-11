@@ -1,0 +1,4 @@
+com\sap\idm\learning\file_manager_server\common_objects\Command.class
+com\sap\idm\learning\file_manager_server\common_objects\Response.class
+com\sap\idm\learning\file_manager_server\common_objects\Request.class
+com\sap\idm\learning\file_manager_server\common_objects\Status.class
