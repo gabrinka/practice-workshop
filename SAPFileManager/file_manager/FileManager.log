@@ -1,0 +1,375 @@
+Oct 13, 2020 1:46:32 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 1:46:33 PM com.sap.idm.learning.commands.ListFilesCommand execute
+FINE: Command " ls " invoked.
+
+Oct 13, 2020 1:46:39 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+FINE: Command " delete " invoked with arguments: [delete, 666.txt]
+
+Oct 13, 2020 1:46:39 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+INFO: Successful deletion of 666.txt
+
+Oct 13, 2020 1:46:44 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 1:46:44 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 1:46:51 PM com.sap.idm.learning.commands.server.Upload execute
+FINE: Command " upload " invoked with arguments: [upload, 666.txt]
+
+Oct 13, 2020 1:46:51 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: No such file: 666.txt exists!
+com.sap.idm.learning.exceptions.FileOperationException: No such file: 666.txt exists!
+	at com.sap.idm.learning.commands.server.Upload.execute(Upload.java:50)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.commands.server.Upload execute
+FINE: Command " upload " invoked with arguments: [upload, bigfile2.bin]
+
+Oct 13, 2020 1:47:00 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+INFO: Successfully sent a request to the server for command execution: [bigfile2.bin, 2321421280]
+Oct 13, 2020 1:47:04 PM com.sap.idm.learning.commands.server.Upload uploadFile
+INFO: File bigfile2.bin has been successfully uploaded from the server!
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.commands.server.ListServerFiles execute
+FINE: Command " listfiles " invoked with arguments: [listfiles]
+
+Oct 13, 2020 1:47:15 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+INFO: Successfully sent a request to the server for command execution: []
+Oct 13, 2020 1:47:23 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+FINE: Command " delete " invoked with arguments: [delete, bigfile2.bin]
+
+Oct 13, 2020 1:47:23 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+INFO: Successful deletion of bigfile2.bin
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile2.bin]
+
+Oct 13, 2020 1:47:28 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+INFO: Successfully sent a request to the server for command execution: [bigfile2.bin]
+Oct 13, 2020 1:47:42 PM com.sap.idm.learning.commands.server.Download downloadFile
+INFO: File bigfile2.bin has been successfully downloaded from the server!
+
+Oct 13, 2020 1:47:57 PM com.sap.idm.learning.commands.server.Disconnect execute
+FINE: Command " disconnect " invoked.
+
+Oct 13, 2020 1:47:57 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+INFO: Successfully sent a request to the server for command execution: []
+Oct 13, 2020 1:47:57 PM com.sap.idm.learning.server.ServerConnection disconnect
+INFO: Successfully disconnected!
+
+Oct 13, 2020 1:47:59 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: Application is quit.
+Oct 13, 2020 2:22:51 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 2:22:53 PM com.sap.idm.learning.commands.ListFilesCommand execute
+FINE: Command " ls " invoked.
+
+Oct 13, 2020 2:23:05 PM com.sap.idm.learning.commands.ShowPropertiesCommand execute
+FINE: Command " properties " invoked with arguments: [properties, bigfile.bin]
+
+Oct 13, 2020 2:23:16 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+FINE: Command " delete " invoked with arguments: [delete, bigfile.bin]
+
+Oct 13, 2020 2:23:16 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+INFO: Successful deletion of bigfile.bin
+
+Oct 13, 2020 2:23:21 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 2:23:21 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 2:23:28 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [2321421280]
+
+Oct 13, 2020 2:23:43 PM com.sap.idm.learning.commands.server.Download downloadFile
+INFO: File bigfile.bin has been successfully downloaded from the server!
+
+Oct 13, 2020 2:23:50 PM com.sap.idm.learning.commands.ListFilesCommand execute
+FINE: Command " ls " invoked.
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.commands.server.Upload execute
+FINE: Command " upload " invoked with arguments: [upload, bigfile.bin]
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin, 2321421280]
+
+Oct 13, 2020 2:24:14 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) null
+
+Oct 13, 2020 2:24:18 PM com.sap.idm.learning.commands.server.Upload uploadFile
+INFO: File bigfile.bin has been successfully uploaded from the server!
+
+Oct 13, 2020 3:26:13 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: Application is quit.
+Oct 13, 2020 5:14:27 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 5:14:32 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 5:14:32 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 5:14:36 PM com.sap.idm.learning.commands.ListFilesCommand execute
+FINE: Command " ls " invoked.
+
+Oct 13, 2020 5:14:40 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+FINE: Command " delete " invoked with arguments: [delete, bigfile.bin]
+
+Oct 13, 2020 5:14:40 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+INFO: Successful deletion of bigfile.bin
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 5:14:45 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [2321421280]
+
+Oct 13, 2020 5:16:47 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 5:16:51 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 5:16:51 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 5:16:56 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [2321421280]
+
+Oct 13, 2020 5:19:52 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Could not download file successfully!
+com.sap.idm.learning.exceptions.FileOperationException: Could not download file successfully!
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:67)
+	at com.sap.idm.learning.commands.server.Download.execute(Download.java:44)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at java.nio.file.Files.copy(Files.java:2908)
+	at java.nio.file.Files.copy(Files.java:3027)
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:50)
+	... 4 more
+
+Oct 13, 2020 5:20:08 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 5:20:08 PM com.sap.idm.learning.server.ServerConnection connect
+WARNING: Already connected to a server!
+
+Oct 13, 2020 5:20:12 PM com.sap.idm.learning.commands.server.Disconnect execute
+FINE: Command " disconnect " invoked.
+
+Oct 13, 2020 5:20:12 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Cannot send Request to Server properly!
+com.sap.idm.learning.exceptions.FileOperationException: Cannot send Request to Server properly!
+	at com.sap.idm.learning.commands.server.ServerCommand.sendRequestToServer(ServerCommand.java:35)
+	at com.sap.idm.learning.commands.server.ServerCommand.sendRequestToServer(ServerCommand.java:22)
+	at com.sap.idm.learning.commands.server.Disconnect.execute(Disconnect.java:16)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.setBlockDataMode(ObjectOutputStream.java:1786)
+	at java.io.ObjectOutputStream.writeNonProxyDesc(ObjectOutputStream.java:1286)
+	at java.io.ObjectOutputStream.writeClassDesc(ObjectOutputStream.java:1231)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1427)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeFatalException(ObjectOutputStream.java:1577)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:351)
+	at com.sap.idm.learning.commands.server.ServerCommand.sendRequestToServer(ServerCommand.java:30)
+	... 5 more
+
+Oct 13, 2020 5:20:15 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: Application is quit.
+Oct 13, 2020 5:20:19 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 5:20:36 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 5:20:36 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [2321421280]
+
+Oct 13, 2020 5:20:42 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Could not download file successfully!
+com.sap.idm.learning.exceptions.FileOperationException: Could not download file successfully!
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:67)
+	at com.sap.idm.learning.commands.server.Download.execute(Download.java:44)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileAlreadyExistsException: bigfile.bin
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at java.nio.file.Files.copy(Files.java:3016)
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:50)
+	... 4 more
+
+Oct 13, 2020 5:20:51 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+FINE: Command " delete " invoked with arguments: [delete, bigfile.bin]
+
+Oct 13, 2020 5:20:51 PM com.sap.idm.learning.commands.DeleteFileCommand execute
+INFO: Successful deletion of bigfile.bin
+
+Oct 13, 2020 5:20:53 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 5:20:53 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 5:20:53 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Cannot read Response from Server properly!
+com.sap.idm.learning.exceptions.FileOperationException: Cannot read Response from Server properly!
+	at com.sap.idm.learning.commands.server.ServerCommand.receiveResponseFromServer(ServerCommand.java:56)
+	at com.sap.idm.learning.commands.server.Download.execute(Download.java:39)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.StreamCorruptedException: invalid type code: 41
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1677)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:482)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:440)
+	at com.sap.idm.learning.commands.server.ServerCommand.receiveResponseFromServer(ServerCommand.java:46)
+	... 4 more
+
+Oct 13, 2020 5:21:07 PM com.sap.idm.learning.commands.CreateEmptyFileCommand execute
+FINE: Command " mkfile " invoked with arguments: [mkfile, mee]
+
+Oct 13, 2020 5:21:07 PM com.sap.idm.learning.commands.CreateEmptyFileCommand execute
+INFO: Successful creation of the file: mee
+
+Oct 13, 2020 5:21:11 PM com.sap.idm.learning.commands.server.Upload execute
+FINE: Command " upload " invoked with arguments: [upload, mee]
+
+Oct 13, 2020 5:21:11 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [mee, 0]
+
+Oct 13, 2020 5:21:11 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Cannot read Response from Server properly!
+com.sap.idm.learning.exceptions.FileOperationException: Cannot read Response from Server properly!
+	at com.sap.idm.learning.commands.server.ServerCommand.receiveResponseFromServer(ServerCommand.java:56)
+	at com.sap.idm.learning.commands.server.Upload.execute(Upload.java:43)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.StreamCorruptedException: invalid type code: 41
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1677)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:482)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:440)
+	at com.sap.idm.learning.commands.server.ServerCommand.receiveResponseFromServer(ServerCommand.java:46)
+	... 4 more
+
+Oct 13, 2020 5:21:24 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: Application is quit.
+Oct 13, 2020 5:21:34 PM com.sap.idm.learning.main.FileManagerMain main
+INFO: File Manager started!
+Oct 13, 2020 5:21:41 PM com.sap.idm.learning.commands.server.Connect execute
+FINE: Command " connect " invoked with arguments: [connect, localhost, 1234]
+
+Oct 13, 2020 5:21:41 PM com.sap.idm.learning.server.ServerConnection connect
+INFO: Successfully connected to server: host:localhost port:1234
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.commands.server.Upload execute
+FINE: Command " upload " invoked with arguments: [upload, mee]
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [mee, 0]
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) null
+
+Oct 13, 2020 5:21:43 PM com.sap.idm.learning.commands.server.Upload uploadFile
+INFO: File mee has been successfully uploaded from the server!
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, mee]
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [mee]
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [0]
+
+Oct 13, 2020 5:21:48 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Could not download file successfully!
+com.sap.idm.learning.exceptions.FileOperationException: Could not download file successfully!
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:67)
+	at com.sap.idm.learning.commands.server.Download.execute(Download.java:44)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.FileAlreadyExistsException: mee
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:81)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at java.nio.file.Files.copy(Files.java:3016)
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:50)
+	... 4 more
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.commands.server.Download execute
+FINE: Command " download " invoked with arguments: [download, bigfile.bin]
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.commands.server.ServerCommand sendRequestToServer
+FINER: Successfully sent a request to the server for command execution: [bigfile.bin]
+
+Oct 13, 2020 5:22:02 PM com.sap.idm.learning.commands.server.ServerCommand receiveResponseFromServer
+FINER: Received a response from server: CREATED(201) [2321421280]
+
+Oct 13, 2020 5:22:41 PM com.sap.idm.learning.main.FileManagerMain main
+SEVERE: Could not download file successfully!
+com.sap.idm.learning.exceptions.FileOperationException: Could not download file successfully!
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:67)
+	at com.sap.idm.learning.commands.server.Download.execute(Download.java:44)
+	at com.sap.idm.learning.main.FileManagerMain.main(FileManagerMain.java:57)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at java.nio.file.Files.copy(Files.java:2908)
+	at java.nio.file.Files.copy(Files.java:3027)
+	at com.sap.idm.learning.commands.server.Download.downloadFile(Download.java:50)
+	... 4 more
+
